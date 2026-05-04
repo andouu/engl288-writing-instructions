@@ -1,3 +1,19 @@
+## Engl 288
+This project was created for UW's Engl288, as part of the Instruction Writing assignment.
+
+### AI Usage Disclaimer
+Some AI was used to modify parts of this website (GPT-5.5). This includes things like:
+- Moving large amounts of code from one file to another
+- Renaming files
+- Creating folders
+- Note that `CLAUDE.md` and `AGENTS.md` are automatically bootstrapped by the website template.
+
+All text content, design, and everything else was done by me.
+
+---
+
+## Technical Overview
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
