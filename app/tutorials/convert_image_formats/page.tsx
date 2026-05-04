@@ -1,7 +1,8 @@
+import Link from "next/link"
 import { BigLink, Icon, ImageShowcase, Section } from "../../components/TutorialComponents"
 
 export default function ConvertImageFormats() {
-  return <div className="py-15">
+  return <div className="py-15 pb-45">
     <h1 className="text-4xl tracking-tight font-semibold text-neutral-900">How to convert image file formats in MacOS</h1>
     <p className="text-neutral-500 mt-5 text-lg">
       MacOS can store image files in various different formats, such as .jpg, .png, and more. Learn the differences between each file format and how to use built-in tools to seamlessly convert between different file formats.
@@ -83,7 +84,12 @@ export default function ConvertImageFormats() {
         />
       </Section>
       <Section heading="Conclusion">
-        Well done, you&apos;ve successfully exported your file in a different format!
+        <p>Good job, you&apos;ve successfully exported your file in a different format!</p>
+        <div className="mt-8">
+          <Link href="/tutorials" className="w-fit rounded-full border border-neutral-200 px-5 py-2 hover:border-neutral-900 hover:bg-neutral-900 hover:text-white transition-colors duration-150">
+            &lt;- All Tutorials
+          </Link>
+        </div>
       </Section>
     </div>
   </div>
