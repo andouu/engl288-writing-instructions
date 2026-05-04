@@ -84,6 +84,9 @@ export default function Home() {
           caption="Exported image in Finder"
         />
       </Section>
+      <Section heading="Conclusion">
+        Well done, you&apos;ve successfully exported your file in a different format!
+      </Section>
     </div>
   </div>
 }
