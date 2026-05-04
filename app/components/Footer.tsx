@@ -21,7 +21,7 @@ export function Footer() {
       <div className="flex-2 flex flex-col gap-8 sm:flex-row sm:items-baseline sm:justify-between">
         <div className="flex flex-col">
           <h3 className="font-medium text-lg">Tutorials</h3>
-          <ul className="mt-4 flex flex-col gap-2 text-sm font-normal">
+          <ul className="mt-4 flex flex-col gap-2 text-sm font-normal text-neutral-500">
             {TUTORIAL_ROUTES.map(({ title, slug }) => (
               <li key={slug}>
                 <Link href={`/tutorials/${slug}`} className="hover:underline">
@@ -33,7 +33,7 @@ export function Footer() {
         </div>
         <div className="flex flex-col">
           <h3 className="font-medium text-lg">Resources</h3>
-          <ul className="mt-4 flex flex-col gap-2 text-sm font-normal">
+          <ul className="mt-4 flex flex-col gap-2 text-sm font-normal text-neutral-500">
             <li>
               <Link href="/about" className="hover:underline">
                 About
