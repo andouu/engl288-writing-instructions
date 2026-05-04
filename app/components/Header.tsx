@@ -14,13 +14,13 @@ export function Header() {
         <div className="ml-auto flex items-center text-sm gap-1">
           <Link
             href="/tutorials"
-            className="rounded-lg px-2 py-1 border border-transparent hover:bg-neutral-100 hover:border-neutral-200 transition-colors duration-150"
+            className="rounded-full px-3 py-1 border border-transparent hover:border-neutral-200 transition-colors duration-150"
           >
             Tutorials
           </Link>
           <Link
             href="/about"
-            className="rounded-lg px-2 py-1 border border-transparent hover:bg-neutral-100 hover:border-neutral-200 transition-colors duration-150"
+            className="rounded-full px-3 py-1 border border-transparent hover:border-neutral-200 transition-colors duration-150"
           >
             About
           </Link>
