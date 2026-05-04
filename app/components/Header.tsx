@@ -7,7 +7,7 @@ export function Header() {
     <div
       className="z-100 w-full h-16 flex justify-center items-center"
     >
-      <div className="w-1/2 flex items-center">
+      <div className="w-full px-5 sm:px-8 lg:w-1/2 lg:px-0 flex items-center">
         <Link href="/" className="font-medium tracking-tight">
           Engl 288 Tutorials
         </Link>

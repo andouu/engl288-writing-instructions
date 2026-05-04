@@ -33,7 +33,7 @@ export default function RootLayout({
         <div className="flex-1 min-h-screen flex flex-col">
           <Header />
           <div className="flex-1 flex justify-center">
-            <div className="w-1/2 h-full">
+            <div className="w-full px-5 sm:px-8 lg:w-1/2 lg:px-0">
               {children}
             </div>
           </div>
