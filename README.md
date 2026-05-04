@@ -1,6 +1,8 @@
 ## Engl 288
 This project was created for UW's Engl288, as part of the Instruction Writing assignment.
 
+You can view it at https://engl288.vercel.app!
+
 ### AI Usage Disclaimer
 Some AI was used to modify parts of this website (GPT-5.5). This includes things like:
 - Moving large amounts of code from one file to another
