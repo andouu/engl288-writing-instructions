@@ -4,12 +4,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export function Header() {
-  const pathname = usePathname();
-  const showBorder = pathname !== "/";
-
   return (
     <div
-      className={`w-full h-12 flex justify-center items-center border-b ${showBorder ? "border-neutral-200" : "border-transparent"}`}
+      className="z-100 w-full h-12 flex justify-center items-center"
     >
       <div className="w-1/2 flex items-center">
         <Link href="/" className="font-medium tracking-tight">
