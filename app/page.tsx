@@ -38,6 +38,52 @@ export default function Home() {
           caption="Example Finder window showing two image files, cat.jpg and cow.jpg"
         />
       </Section>
+      <Section heading="Open in Preview">
+        <p>Next, double-click the desired image. The Preview app <Icon src="/preview.png" alt="Preview App Icon" /> will open a window previewing the image. Using the example given above, opening cat.jpg will open a window like this:</p>
+        <ImageShowcase
+          src="/open_in_preview.png"
+          alt="Image showing an example of image files in Preview"
+          width={3248}
+          height={2112}
+          sizes="(max-width: 1024px) 100vw, 1024px"
+          caption="Example Preview window showing one image, cat.jpg"
+        />
+      </Section>
+      <Section heading="Export in Preview">
+        <p>In the menu bar, click "File", then "Export".</p>
+        <ImageShowcase
+          src="/export_in_preview.png"
+          alt="Image showing where the export button is in the Preview app"
+          width={3248}
+          height={2112}
+          sizes="(max-width: 1024px) 100vw, 1024px"
+          caption="Pressing the export button in the Preview app"
+        />
+        <p>A popup will open with options to name the newly exported file, where to save the exported file, and what format to export the image file as.</p>
+        <ImageShowcase
+          src="/popup_in_preview.png"
+          alt="Image showing the export menu in the Preview app"
+          width={3248}
+          height={2112}
+          sizes="(max-width: 1024px) 100vw, 1024px"
+          caption="Export options in Preview"
+        />
+        <p>For example, to export cat.jpg as cat.png in the "My Images" folder, you select the following options:</p>
+        <ul className="my-4 list-disc list-outside pl-6 space-y-2 text-neutral-800">
+          <li className="pl-1"><b className="font-medium">Export As:</b> cat.png</li>
+          <li className="pl-1"><b className="font-medium">Where:</b> My Images</li>
+          <li className="pl-1"><b className="font-medium">Format:</b> PNG</li>
+        </ul>
+        <p>Press the blue "save" button to finalize exporting the image file. A new file will appear in Finder like so:</p>
+        <ImageShowcase
+          src="/exported_in_finder.png"
+          alt="Image showing the exported images in the Finder app"
+          width={3248}
+          height={2112}
+          sizes="(max-width: 1024px) 100vw, 1024px"
+          caption="Exported image in Finder"
+        />
+      </Section>
     </div>
   </div>
 }
@@ -53,7 +99,9 @@ function Divider() {
 function ImageShowcase({ caption, ...props }: { caption: string } & ComponentProps<typeof Image>) {
   return (
     <div className="w-full my-8 flex flex-col gap-2 items-center justify-center">
-      <Image {...props} className={`h-auto w-full ${props.className ?? ""}`.trim()} />
+      <div className="w-full h-full rounded-xl overflow-hidden">
+        <Image {...props} className={`h-auto w-full ${props.className ?? ""}`.trim()} />
+      </div>
       <span className="text-center text-sm text-neutral-400">{caption}</span>
     </div>
   )
@@ -61,7 +109,7 @@ function ImageShowcase({ caption, ...props }: { caption: string } & ComponentPro
 
 function BigLink({ title, description, ...props }: { title: string, description: string } & ComponentProps<typeof Link>) {
   return <Link {...props}>
-    <div className="w-full h-15 flex flex-col gap-0.5 justify-center px-3.5 rounded-xl border border-neutral-200 hover:bg-neutral-100">
+    <div className="w-full h-15 flex flex-col gap-0.5 justify-center px-3.5 rounded-xl border border-neutral-200 hover:bg-neutral-100 transition-colors duration-150">
       <span className="leading-tight tracking-tight font-medium">{title}</span>
       <span className="leading-tight text-neutral-400 text-sm">{description}</span>
     </div>
