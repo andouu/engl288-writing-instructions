@@ -1,6 +1,4 @@
-import Image from "next/image"
-import Link from "next/link"
-import { ComponentProps } from "react"
+import { BigLink, Icon, ImageShowcase, Section } from "../../components/TutorialComponents"
 
 export default function ConvertImageFormats() {
   return <div className="py-15">
@@ -89,41 +87,4 @@ export default function ConvertImageFormats() {
       </Section>
     </div>
   </div>
-}
-
-function Icon({ ...props }: ComponentProps<typeof Image>) {
-  return <Image {...props} width={20} height={20} className="inline-block mb-1 mr-0.5" />
-}
-
-function Divider() {
-  return <hr className="border-neutral-200 w-full my-8" />
-}
-
-function ImageShowcase({ caption, ...props }: { caption: string } & ComponentProps<typeof Image>) {
-  return (
-    <div className="w-full my-8 flex flex-col gap-2 items-center justify-center">
-      <div className="w-full h-full rounded-xl overflow-hidden">
-        <Image {...props} className={`h-auto w-full ${props.className ?? ""}`.trim()} />
-      </div>
-      <span className="text-center text-sm text-neutral-400">{caption}</span>
-    </div>
-  )
-}
-
-function BigLink({ title, description, ...props }: { title: string, description: string } & ComponentProps<typeof Link>) {
-  return <Link {...props}>
-    <div className="w-full h-15 flex flex-col gap-0.5 justify-center px-3.5 rounded-xl border border-neutral-200 hover:bg-neutral-100 transition-colors duration-150">
-      <span className="leading-tight tracking-tight font-medium">{title}</span>
-      <span className="leading-tight text-neutral-400 text-sm">{description}</span>
-    </div>
-  </Link>
-}
-
-function Section({ heading, children }: { heading: string, children?: React.ReactNode }) {
-  return <section className="w-full">
-    <h2 className="text-2xl tracking-tight font-medium mb-3">{heading}</h2>
-    <div>
-      {children}
-    </div>
-  </section>
 }
