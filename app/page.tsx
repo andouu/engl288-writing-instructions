@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return <div className="fixed top-0 left-0 w-screen h-screen flex items-center justify-center">
@@ -11,6 +12,9 @@ export default function Home() {
       <div className="w-full flex flex-col justify-center items-center mt-15 gap-4">
         <h1 className="text-3xl font-medium tracking-tight text-neutral-800">Your hub for all things Apple related.</h1>
         <h2 className="text-lg tracking-tight text-neutral-500 text-center max-w-xl leading-tight">Tutorials that teach you how to become a power user for all your Apple devices, like Mac, iPhone, and more</h2>
+        <Link href="/tutorials" className="mt-4 w-fit rounded-full border border-neutral-200 px-5 py-2 hover:border-neutral-900 hover:bg-neutral-900 hover:text-white transition-colors duration-150">
+          See Tutorials
+        </Link>
       </div>
     </div>
   </div>
