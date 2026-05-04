@@ -39,20 +39,22 @@ export function Footer() {
                 About
               </Link>
             </li>
+            <li>
+              <Link
+                href="https://github.com/andouu/engl288-writing-instructions"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:underline"
+              >
+                GitHub
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
     </div>
-    <div className="w-full px-5 sm:px-8 lg:w-1/2 lg:px-0 flex items-center justify-between pb-6 text-sm text-neutral-500">
+    <div className="w-full px-5 sm:px-8 lg:w-1/2 lg:px-0 flex items-center pb-6 text-sm text-neutral-500">
       <span>© {currentYear} Andrew Zhou</span>
-      <Link
-        href="https://github.com/andouu/engl288-writing-instructions"
-        target="_blank"
-        rel="noreferrer"
-        className="hover:underline"
-      >
-        GitHub
-      </Link>
     </div>
   </div>;
 }
