@@ -84,7 +84,7 @@ export default function ConvertImageFormats() {
         />
       </Section>
       <Section heading="Conclusion">
-        <p>Good job, you&apos;ve successfully exported your file in a different format!</p>
+        <p>Congrats, you&apos;ve successfully exported your file in a different format!</p>
         <div className="mt-8">
           <Link href="/tutorials" className="w-fit rounded-full border border-neutral-200 px-5 py-2 hover:border-neutral-900 hover:bg-neutral-900 hover:text-white transition-colors duration-150">
             &lt;- All Tutorials
