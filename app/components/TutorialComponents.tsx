@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import type { ComponentProps, ReactNode } from "react"
+import { GoInfo } from "react-icons/go"
 
 export function Icon({ ...props }: ComponentProps<typeof Image>) {
   return <Image {...props} width={20} height={20} className="inline-block mb-1 mr-0.5" />
@@ -40,4 +41,16 @@ export function Section({ heading, children }: { heading: string, children?: Rea
       {children}
     </div>
   </section>
+}
+
+export function Note({ heading, children }: { heading: string, children?: ReactNode }) {
+  return <div className="p-4 my-4 w-full min-h-14 flex gap-4 rounded-lg bg-neutral-100">
+    <div className="h-5 flex items-center text-neutral-500">
+      <GoInfo />
+    </div>
+    <div className="flex flex-col gap-1">
+      <h3 className="text-sm font-medium text-neutral-800">{heading}</h3>
+      <p className="text-sm text-neutral-800">{children}</p>
+    </div>
+  </div>
 }
