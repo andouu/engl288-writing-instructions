@@ -14,8 +14,8 @@ export function Divider() {
 export function ImageShowcase({ caption, ...props }: { caption: string } & ComponentProps<typeof Image>) {
   return (
     <div className="w-full my-8 flex flex-col gap-2 items-center justify-center">
-      <div className="w-full h-full rounded-xl overflow-hidden">
-        <Image {...props} className={`h-auto w-full ${props.className ?? ""}`.trim()} />
+      <div className="max-w-full rounded-xl overflow-hidden">
+        <Image {...props} className={`h-auto max-w-full ${props.className ?? ""}`.trim()} />
       </div>
       <span className="text-center text-sm text-neutral-400">{caption}</span>
     </div>
@@ -34,8 +34,8 @@ export function BigLink({ title, description, ...props }: { title: string, descr
   </Link>
 }
 
-export function Section({ heading, children }: { heading: string, children?: ReactNode }) {
-  return <section className="w-full">
+export function Section({ heading, children, className, ...props }: { heading: string } & ComponentProps<"section">) {
+  return <section {...props} className={`w-full ${className ?? ""}`.trim()}>
     <h2 className="text-2xl tracking-tight font-medium mb-3">{heading}</h2>
     <div>
       {children}
