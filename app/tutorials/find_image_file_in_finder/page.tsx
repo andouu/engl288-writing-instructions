@@ -85,8 +85,8 @@ export default function FindImageFileInFinder() {
         />
         <p>{"If you've modified your screenshot options, your screenshots might not appear in the Desktop folder. See your options by:"}</p>
         <ol className="my-4 list-decimal list-outside pl-6 space-y-2 text-neutral-800">
-          <li className="pl-1">Press ⌘ + Space + 5. An action bar will appear at the bottom of your screen.</li>
-          <li className="pl-1">Click on the "Options" Dropdown. A menu will appear.</li>
+          <li className="pl-1">Press ⌘ + Space + 5. An action bar appears at the bottom of your screen.</li>
+          <li className="pl-1">Click on the "Options" Dropdown. A menu appears.</li>
           <li className="pl-1">Under the "Save to" section, the option that is selected is where your screenshots are saved to.</li>
         </ol>
         <Note heading="Important Note">
